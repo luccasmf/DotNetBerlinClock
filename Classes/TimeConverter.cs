@@ -26,7 +26,7 @@ namespace BerlinClock
                 string hourIndicator2 = (new string('R', hourCount)).PadRight(4, 'O');
 
 
-                string minuteIndicator1 = "";
+                string minuteIndicator1 = string.Empty;
                 for (int i = 5; i < minutes; i += 5)
                 {
                     minuteIndicator1 += i % 3 == 0 ? "R" : "Y";
